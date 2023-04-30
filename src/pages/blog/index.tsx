@@ -23,7 +23,7 @@ const Blog = memo((props) => {
                   <Link href={`${APP_ROUTE.BLOG}/1`} key={index}>
                     <div
                       key={index}
-                      className="p-5 rounded-lg mb-2 h-full dark:border-[#212425] dark:border-2"
+                      className="p-5 rounded-lg mb-2 h-full dark1111:border-[#212425] dark1111:border-2"
                       style={{ background: 'rgb(252, 244, 255)' }}
                     >
                       <div className="overflow-hidden rounded-lg">
@@ -39,13 +39,13 @@ const Blog = memo((props) => {
                           style={{ color: 'transparent' }}
                         />
                       </div>
-                      <div className="flex mt-4 text-tiny text-gray-lite dark:text-[#A6A6A6]">
+                      <div className="flex mt-4 text-tiny text-gray-lite dark1111:text-[#A6A6A6]">
                         <span>177 April</span>
                         <span className="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
                           Inspiration
                         </span>
                       </div>
-                      <h3 className="text-lg font-medium dark:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark:hover:text-[#FA5252]">
+                      <h3 className="text-lg font-medium dark1111:text-white duration-300 transition cursor-pointer mt-3 pr-4 hover:text-[#FA5252] dark1111:hover:text-[#FA5252]">
                         How to Own Your Audience by Creating an Email List.
                       </h3>
                     </div>

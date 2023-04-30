@@ -14,7 +14,7 @@ const Layout = memo(({ children }) => {
 
   if (isBlog) {
     return (
-      <div className="bg-homeBg min-h-screen dark:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
+      <div className="bg-homeBg min-h-screen dark1111:bg-homeBg-dark bg-no-repeat bg-center bg-cover bg-fixed md:pb-16 w-full">
         <div className="z-50 ">
           <div className="container">
             <Header horizontal />
@@ -26,14 +26,14 @@ const Layout = memo(({ children }) => {
   }
 
   return (
-    <section className="bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark:bg-homeTwoBg-dark md:pb-16 w-full">
+    <section className="bg-homeBg min-h-screen bg-no-repeat bg-center bg-cover bg-fixed dark1111:bg-homeTwoBg-dark md:pb-16 w-full">
       <div className="container grid grid-cols-12 md:gap-10 justify-between lg:pt-[200px]">
         <div className="col-span-12 lg:col-span-4 lg:h-screen lg:sticky">
           <Profile />
         </div>
         <div className="col-span-12 lg:col-span-8 ">
           <Header />
-          <div className="lg:rounded-2xl bg-white dark:bg-[#111111]">{children}</div>
+          <div className="lg:rounded-2xl bg-white dark1111:bg-[#111111]">{children}</div>
         </div>
       </div>
     </section>

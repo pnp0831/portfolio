@@ -71,7 +71,7 @@ const Header = memo(({ horizontal }: HeaderProps) => {
   if (horizontal) {
     return (
       <header className="flex justify-between items-center fixed top-0 left-0 w-full lg:static z-[1111111111] ">
-        <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark:bg-transparent dark:bg-black ">
+        <div className=" flex justify-between w-full px-4 lg:px-0 bg-[#F3F6F6] lg:bg-transparent lg:dark1111:bg-transparent dark1111:bg-black ">
           <div className="flex justify-between w-full items-center space-x-4 lg:my-8 my-5 ">
             <a className="text-5xl font-semibold" href="/">
               <img
@@ -95,7 +95,7 @@ const Header = memo(({ horizontal }: HeaderProps) => {
                   viewBox="0 0 24 24"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-3xl dark-mode-light dark:hidden"
+                  className="text-3xl dark-mode-light dark1111:hidden"
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -109,7 +109,7 @@ const Header = memo(({ horizontal }: HeaderProps) => {
                   viewBox="0 0 24 24"
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="text-2xl dark-mode-dark hidden fill-jacarta-700 group-hover:fill-white group-focus:fill-white dark:block dark:fill-white "
+                  className="text-2xl dark-mode-dark hidden fill-jacarta-700 group-hover:fill-white group-focus:fill-white dark1111:block dark1111:fill-white "
                   height="1em"
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +125,7 @@ const Header = memo(({ horizontal }: HeaderProps) => {
                   <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
                 </svg>
               </span>
-              <span className="lg:opacity-0 lg:invisible visible opacity-100 bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center cursor-pointer items-center text-white dark:text-white text-3xl ml-3 ">
+              <span className="lg:opacity-0 lg:invisible visible opacity-100 bg-[#ef4060] w-[40px] h-[40px] rounded-full flex justify-center cursor-pointer items-center text-white dark1111:text-white text-3xl ml-3 ">
                 <svg
                   stroke="currentColor"
                   fill="currentColor"
@@ -146,8 +146,8 @@ const Header = memo(({ horizontal }: HeaderProps) => {
             {APP_MENUS.map((item) => {
               const className =
                 router.pathname.startsWith(item.href) === item.href
-                  ? 'rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] linked bg-gradient-to-r  '
-                  : 'px-2 rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark:text-[#A6A6A6] ';
+                  ? 'rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 px-2 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark1111:hover:text-white dark1111:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark1111:text-[#A6A6A6] linked bg-gradient-to-r  '
+                  : 'px-2 rounded-md  cursor-pointer font-poppins bg-white text-gray-lite font-medium mx-2.5 flex text-xtiny py-2.5 md:px-4 xl:px-5 items-center transition-all duration-300 ease-in-out dark1111:hover:text-white dark1111:bg-[#212425] hover:text-white hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] dark1111:text-[#A6A6A6] ';
               return (
                 <li className="mb-1" key={item.name}>
                   <Link className={className} href={item.href} key={item.name}>
@@ -165,14 +165,14 @@ const Header = memo(({ horizontal }: HeaderProps) => {
   }
 
   return (
-    <header className="lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark:bg-[#111111] ">
+    <header className="lg:w-[526px] h-[144px] hidden lg:block p-[30px] ml-auto mb-10 rounded-[16px] bg-white dark1111:bg-[#111111] ">
       <nav className="hidden lg:block">
         <ul className="flex ">
           {APP_MENUS.map((item) => {
             const className =
               router.pathname === item.href
-                ? 'w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark:text-[#A6A6A6]    justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] lg:text-white lg:dark:text-white   lg:bg-gradient-to-r from-[#FA5252] to-[#DD2476] '
-                : 'w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark:text-[#A6A6A6]    justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark:hover:text-white dark:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] ';
+                ? 'w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark1111:text-[#A6A6A6]    justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark1111:hover:text-white dark1111:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] lg:text-white lg:dark1111:text-white   lg:bg-gradient-to-r from-[#FA5252] to-[#DD2476] '
+                : 'w-full h-20 rounded-[10px]  cursor-pointer  font-poppins  bg-[#F3F6F6]  font-medium mx-2.5  text-xtiny text-gray-lite dark1111:text-[#A6A6A6]    justify-center flex flex-col items-center   transition-all duration-300 ease-in-out dark1111:hover:text-white dark1111:bg-[#212425] hover:text-white   hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] ';
             return (
               <Link className={className} href={item.href} key={item.name}>
                 <span className="text-xl mb-1">{item.icon}</span>
