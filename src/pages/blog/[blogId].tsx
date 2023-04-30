@@ -41,16 +41,16 @@ export default function BlogDetail() {
               style={{ color: 'transparent', objectFit: 'contain' }}
             />
 
-            <div className="flex mt-4 text-tiny text-black dark1111:text-white">
+            <div className="flex mt-4 text-tiny text-black dark:text-white">
               <span>177 April</span>
               <span className="pl-6 relative after:absolute after:h-1 after:w-1 after:bg-gray-lite after:rounded-full after:left-2 after:top-[50%] transform after:-translate-y-1/2">
                 Inspiration
               </span>
             </div>
-            <h2 className="dark1111:text-white sm:text-3xl mt-2 font-medium">
+            <h2 className="dark:text-white sm:text-3xl mt-2 font-medium">
               How to Own Your Audience by Creating an Email List.
             </h2>
-            <p className="dark1111:text-white font-normal text-[15px] sm:text-sm my-4">
+            <p className="dark:text-white font-normal text-[15px] sm:text-sm my-4">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus
               porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta
               inventore dolorum conseqr quo obcaecati rerum sit non. Lorem ipsum dolor, sit amet
@@ -58,7 +58,7 @@ export default function BlogDetail() {
               magni quasi sed, enim corporis omnis doloremque soluta inventore dolorum consequuntur
               quo obcaecati rerum sit non.{' '}
             </p>
-            <p className="dark1111:text-white font-normal text-[15px] sm:text-sm my-4">
+            <p className="dark:text-white font-normal text-[15px] sm:text-sm my-4">
               {' '}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus
               porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta
@@ -68,7 +68,7 @@ export default function BlogDetail() {
               porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta
               inventore dolorum consequuntur.{' '}
             </p>
-            <p className="dark1111:text-white font-normal text-[15px] sm:text-sm my-4">
+            <p className="dark:text-white font-normal text-[15px] sm:text-sm my-4">
               {' '}
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga consequatur delectus
               porro sapiente molestias, magni quasi sed, enim corporis omnis doloremque soluta
@@ -76,7 +76,7 @@ export default function BlogDetail() {
             </p>
           </div>
           <div className="flex items-center md:justify-end space-x-4 mt-8 mr-3">
-            <h6 className="dark1111:text-white text-[20px] ">Share:</h6>
+            <h6 className="dark:text-white text-[20px] ">Share:</h6>
             <div className="flex space-x-3">
               <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                 <span className="socialbtn text-[#1773EA]">
