@@ -7,11 +7,15 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 export default function App({ Component, pageProps }: AppProps) {
-  const { setTheme } = useTheme();
+  const { setTheme, ...rest } = useTheme();
 
   useEffect(() => {
     setTheme('light');
   }, []);
+
+  useEffect(() => {
+    setTheme('light');
+  });
 
   useEffect(() => {
     AOS.init({
