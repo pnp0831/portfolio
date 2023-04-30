@@ -10,12 +10,12 @@ export default function App({ Component, pageProps }: AppProps) {
   const { setTheme, ...rest } = useTheme();
 
   useEffect(() => {
-    setTheme('light');
+    // setTheme('light');
+    console.log('render');
+    // document.documentElement.classList.remove('dark');
+    // document.documentElement.classList.add('light');
+    // document.documentElement.style['color-schema'] = 'light';
   }, []);
-
-  useEffect(() => {
-    setTheme('light');
-  });
 
   useEffect(() => {
     AOS.init({
