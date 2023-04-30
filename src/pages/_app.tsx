@@ -6,17 +6,18 @@ import Layout from '~/components/layout';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 
-export default function App({ Component, pageProps }: AppProps) {
+const Fake = ({ children }) => {
   const { setTheme, ...rest } = useTheme();
 
   useEffect(() => {
-    // setTheme('light');
-    console.log('render');
-    // document.documentElement.classList.remove('dark');
-    // document.documentElement.classList.add('light');
-    // document.documentElement.style['color-schema'] = 'light';
+    setTheme('light');
+    console.log('rest', rest);
   }, []);
 
+  return children;
+};
+
+export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
     AOS.init({
       offset: 100,
@@ -25,9 +26,11 @@ export default function App({ Component, pageProps }: AppProps) {
 
   return (
     <ThemeProvider attribute="class">
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <Fake>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </Fake>
     </ThemeProvider>
   );
 }
