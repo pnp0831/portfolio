@@ -10,10 +10,13 @@ export default function App({ Component, pageProps }: AppProps) {
   const { setTheme } = useTheme();
 
   useEffect(() => {
+    setTheme('light');
+  }, []);
+
+  useEffect(() => {
     AOS.init({
       offset: 100,
     });
-    setTheme('light');
   }, []);
 
   return (
